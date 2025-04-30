@@ -8,6 +8,7 @@ jobs:
   run-from-my-script:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@vlatest
     - name: install cowpy
       run: pip install cowpy
     - name: copy my script
