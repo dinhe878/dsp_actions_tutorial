@@ -1,0 +1,25 @@
+# My frist GitHub action
+name: My first GitHub action
+
+on:
+  push:
+
+jobs:
+  # First job
+  run-cowsay:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install cowsay
+      run: pip install cowsay
+    - name: run cowsay
+      run: cowsay -c cheese -t 'hej you'
+
+  # Second job
+  run-cowpy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install cowpy
+      run: pip install cowpy
+    - name: run cowpy
+      run: cowpy -c tux hej there
+
