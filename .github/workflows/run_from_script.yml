@@ -11,7 +11,7 @@ jobs:
     - name: install cowpy
       run: pip install cowpy
     - name: copy my script
-      run: cp example.py 
+      run: cp example.py .
     - name: run my script
       run: python examlpe.py
 
